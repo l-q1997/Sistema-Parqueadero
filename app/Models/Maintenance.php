@@ -9,7 +9,7 @@ class Maintenance extends Model
 {
     use HasFactory;
 
-    // Atributos rellenables (fillable)
+    // Atributos 
     protected $fillable = [
         'vehicle_id',
         'description',
