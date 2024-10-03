@@ -1,0 +1,15 @@
+sigue los siguientes paso
+solo son necesario la primera vez para que se ejecuite de manera corecta el proyecto 
+
+---en el archi .env dale un nombre a la base de datos DB_PARQUEADERO
+
+---ejecutar php artisan migrate para ejecutar las diferentes miracios de ser necesario
+
+---composer require laravel/ui 
+
+---php artisan ui vue --auth para realizar el login de se necesario
+
+--- instala npm y corelo con npm install && run dev
+
+--- instalosmo promiamente la palntilla composer reuqire-frontend-presets/materil-dashboard
+
