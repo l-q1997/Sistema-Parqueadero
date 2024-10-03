@@ -9,19 +9,20 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
-    {
-        Schema::create('maintenances', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
-    }
+    public function up()
+{
+    Schema::create('maintenances', function (Blueprint $table) {
+        $table->id();
+        $table->unsignedBigInteger('vehicle_id'); 
+        $table->text('description'); 
+        $table->decimal('cost', 8, 2); 
+        $table->date('maintenance_date');
+        $table->string('status')->default('pending'); 
+        $table->timestamps();
 
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('maintenances');
-    }
+        
+        $table->foreign('vehicle_id')->references('id')->on('vehicles')->onDelete('cascade');
+    });
+}
+
 };
