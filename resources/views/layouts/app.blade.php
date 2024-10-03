@@ -72,9 +72,10 @@
             </div>
         </nav>
 
-        <main class="py-4">
-            @yield('content')
-        </main>
+        <main class="py-4" style="background-image: url('{{ asset('img/bg-smart-home-1.jpg') }}'); background-size: cover; background-position: center;">
+    @yield('content')
+</main>
+
     </div>
 </body>
 </html>
