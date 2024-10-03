@@ -15,6 +15,13 @@ class Vehicle extends Model
         'status',
     ];
 
+    // Relación de un vehículo con múltiples mantenimientos
+    public function maintenances()
+    {
+        return $this->hasMany(Maintenance::class);
+    }
+
+    // Relación de un vehículo con muchas entregas
     public function deliveries()
     {
         return $this->hasMany(Delivery::class);

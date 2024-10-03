@@ -11,15 +11,20 @@ class Order extends Model
 
     protected $fillable = [
         'customer_id',
-        'description',
-        'delivery_date',
+        'load_description',
+        'origin',
+        'destination',
+        'order_date',
+        'status',
     ];
 
+    // Relación de un pedido con un cliente
     public function customer()
     {
         return $this->belongsTo(Customer::class);
     }
 
+    // Relación de un pedido con múltiples entregas
     public function deliveries()
     {
         return $this->hasMany(Delivery::class);

@@ -11,10 +11,10 @@ class Customer extends Model
 
     protected $fillable = [
         'name',
-        'email',
-        'phone',
+        'contact_info',
     ];
 
+    // Relación de un cliente con muchos pedidos
     public function orders()
     {
         return $this->hasMany(Order::class);

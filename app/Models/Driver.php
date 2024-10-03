@@ -13,9 +13,16 @@ class Driver extends Model
         'name',
         'license',
         'experience',
-        'available',
+        'availability',
     ];
 
+    // Relación de un conductor con muchas rutas
+    public function routes()
+    {
+        return $this->hasMany(Route::class);
+    }
+
+    // Relación de un conductor con muchas entregas
     public function deliveries()
     {
         return $this->hasMany(Delivery::class);

@@ -10,12 +10,21 @@ class Route extends Model
     use HasFactory;
 
     protected $fillable = [
-        'origin',
-        'destination',
+        'start_location',
+        'end_location',
+        'distance',
+        'estimated_time',
     ];
 
+    // Relación de una ruta con múltiples entregas
     public function deliveries()
     {
         return $this->hasMany(Delivery::class);
+    }
+
+    // Relación de una ruta con un conductor
+    public function driver()
+    {
+        return $this->belongsTo(Driver::class);
     }
 }
