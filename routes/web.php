@@ -12,22 +12,23 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\CustomerController;
 
 
-// Rutas para el manejo de vehículos (Vehicle)
+
+
 Route::resource('vehicles', VehicleController::class)->middleware('auth');
 
-// Rutas para el manejo de conductores (Driver)
+
 Route::resource('drivers', DriverController::class)->middleware('auth');
 
-// Rutas para el manejo de rutas (Route)
+
 Route::resource('routes', RouteController::class)->middleware('auth');
 
-// Rutas para el manejo de entregas (Delivery)
+
 Route::resource('deliveries', DeliveryController::class)->middleware('auth');
 
-// Rutas para el manejo de pedidos (Order)
+
 Route::resource('orders', OrderController::class)->middleware('auth');
 
-// Rutas para el manejo de clientes (Customer)
+
 Route::resource('customers', CustomerController::class)->middleware('auth');
 
 

@@ -1,15 +1,76 @@
-sigue los siguientes paso
-solo son necesario la primera vez para que se ejecuite de manera corecta el proyecto 
+Se deben seguir los siguientes paso para ejecutar de forma correcta el proyecto 
 
----en el archi .env dale un nombre a la base de datos DB_PARQUEADERO
+-----Dependencias al clonar el proyecto:
 
----ejecutar php artisan migrate para ejecutar las diferentes miracios de ser necesario
+Cuando clonas el proyecto de Laravel desde GitHub en tu equipo, 
+es necesario ejecutar algunos comandos para instalar las dependencias 
+y asegurarse de que el entorno de desarrollo esté configurado correctamente. 
+Aquí están los pasos clave:
 
----composer require laravel/ui 
+1. Instalar las dependencias de Composer:
+   Después de clonar el proyecto, navega al
+ directorio del proyecto y ejecuta el siguiente 
+comando para instalar todas las dependencias de 
+PHP (Laravel, paquetes, etc.):
+   
+   ```ESCRIBE ESTE COMANDO EN LA TERMINAL DE TU PREFERENCIA
+   composer install
+   ```
 
----php artisan ui vue --auth para realizar el login de se necesario
+2. Instalar las dependencias de NPM (si tu proyecto usa assets con Laravel 
+Mix o Vite):
+   Ejecuta el siguiente comando para instalar 
+   las dependencias de frontend (si las tienes definidas):
+   
+   ```ESCRIBE ESTE COMANDO EN LA TERMINAL DE TU PREFERENCIA
+   npm install
+   ```
 
---- instala npm y corelo con npm install && run dev
+3. Copiar el archivo `.env`:
+   El archivo `.env` es necesario para la configuración del 
+entorno local. Si no está en el repositorio 
+(lo cual es correcto, ya que se debe excluir), 
+debes crear uno basado en el archivo `.env.example`:
+   
+   ```ESCRIBE ESTE COMANDO EN LA TERMINAL DE TU PREFERENCIA
+   cp .env.example .env
+   ```
 
---- instalosmo promiamente la palntilla composer reuqire-frontend-presets/materil-dashboard
 
+
+ESTOS ULTIMOS PASOS DE SER NECESARIOS REALIZALOS 
+SINO SOLO CONFIGURA EL NOMBRE DE LA BASE DE DATOS Y EJECUTA TU PROYECTO
+SINO HAY PROBELMA Y  TODO ESTA BIEN, GENIAL YA TU PROYECTO ESTA FUNCIONADO
+DE LO CONTRARIO DEBES SEGUIR LOS SIGUIENTES PASOS.. 
+
+4. Generar la clave de la aplicación:
+   Una vez copiado el archivo `.env`, 
+genera la clave de la aplicación con:
+   
+   ```ESCRIBE ESTE COMANDO EN LA TERMINAL DE TU PREFERENCIA
+   php artisan key:generate
+   ```
+
+5. Configurar la base de datos:
+   Asegúrate de configurar los valores de la
+ base de datos en tu archivo `.env`, tales 
+como `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`, y otros detalles.
+
+6. Migrar la base de datos:
+   Si tu proyecto tiene migraciones, 
+debes ejecutarlas para crear las tablas 
+en la base de datos:
+   
+   ```ESCRIBE ESTE COMANDO EN LA TERMINAL DE TU PREFERENCIA
+   php artisan migrate
+   ```
+
+7. **Compilar assets (si usas Laravel Mix o Vite):**
+   Si tu proyecto tiene archivos CSS/JS que deben ser 
+compilados, puedes hacerlo con:
+   
+   ```ESCRIBE ESTE COMANDO EN LA TERMINAL DE TU PREFERENCIA
+   npm run dev
+   ```
+
+---
