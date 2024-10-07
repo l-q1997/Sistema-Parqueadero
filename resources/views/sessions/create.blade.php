@@ -75,7 +75,7 @@
                                         </div>
                                         <div class="text-center">
                                             <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2"> Inicio de 
-                                                Sesion</button>
+                                                Sesión</button>
                                         </div>
                                         <p class="mt-4 text-sm text-center">
                                             ¿No tienes una cuenta? 

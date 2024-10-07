@@ -11,7 +11,7 @@
     </div>
     <main class="main-content  mt-0">
         <div class="page-header align-items-start min-vh-100"
-            style="background-image: url('https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');">
+            style="background-image: url('https://theme7x.com/fastway/images/main-slider/slider1/slide1.jpg');">
             <span class="mask bg-gradient-dark opacity-6"></span>
             <div class="container my-auto">
                 <div class="row">
@@ -19,8 +19,8 @@
                         <div class="card z-index-0 fadeIn3 fadeInBottom">
                             <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
                                 <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
-                                    <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Reset password</h4>
-                                    <p class='text-light p-2'>You will receive an e-mail in maximum 60 seconds</p>
+                                    <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Restablecer la contraseña</h4>
+                                    <p class='text-light p-2'>Recibirás un correo electrónico en un máximo de 60 segundos.</p>
                                 </div>
                             </div>
                             <div class="card-body">
@@ -64,12 +64,12 @@
                                     @enderror
                                     <div class="text-center">
                                         <button type="submit"
-                                            class="btn bg-gradient-primary w-100 my-4 mb-2">Send</button>
+                                            class="btn bg-gradient-primary w-100 my-4 mb-2">Enviar</button>
                                     </div>
                                     <p class="mt-4 text-sm text-center">
-                                        Don't have an account?
+                                        ¿No tienes una cuenta?
                                         <a href="{{ route('register') }}"
-                                            class="text-primary text-gradient font-weight-bold">Sign up</a>
+                                            class="text-primary text-gradient font-weight-bold">Regístrate</a>
                                     </p>
                                 </form>
                             </div>
