@@ -7,10 +7,10 @@
         <!-- End Navbar -->
         <div class="container-fluid px-2 px-md-4">
             <div class="page-header min-height-300 border-radius-xl mt-4"
-                style="background-image: url('https://images.unsplash.com/photo-1531512073830-ba890ca4eba2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');">
-                <span class="mask  bg-gradient-primary  opacity-6"></span>
+                style="background-image: url('https://tractocarga.com/wp-content/uploads/2016/10/shutterstock_-photo-YouTruck-7-1.jpg');">
+                <span class="mask  bg-gradient-primary  opacity-0"></span>
             </div>
-            <div class="card card-body mx-3 mx-md-4 mt-n6">
+            <div class="card card-body mx-4 mx-md-4 mt-n3">
                 <div class="row gx-4 mb-2">
                     <div class="col-auto">
                         <div class="avatar avatar-xl position-relative">
@@ -24,7 +24,7 @@
                                 {{ auth()->user()->name }}
                             </h5>
                             <p class="mb-0 font-weight-normal text-sm">
-                                CEO / Co-Founder
+                                Administrador
                             </p>
                         </div>
                     </div>
@@ -35,21 +35,21 @@
                                     <a class="nav-link mb-0 px-0 py-1 active " data-bs-toggle="tab" href="javascript:;"
                                         role="tab" aria-selected="true">
                                         <i class="material-icons text-lg position-relative">home</i>
-                                        <span class="ms-1">App</span>
+                                        <span class="ms-1">Paquetes</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link mb-0 px-0 py-1 " data-bs-toggle="tab" href="javascript:;"
                                         role="tab" aria-selected="false">
                                         <i class="material-icons text-lg position-relative">email</i>
-                                        <span class="ms-1">Messages</span>
+                                        <span class="ms-1">Notificaciones</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link mb-0 px-0 py-1 " data-bs-toggle="tab" href="javascript:;"
                                         role="tab" aria-selected="false">
                                         <i class="material-icons text-lg position-relative">settings</i>
-                                        <span class="ms-1">Settings</span>
+                                        <span class="ms-1">Configuracion</span>
                                     </a>
                                 </li>
                             </ul>
@@ -60,7 +60,7 @@
                     <div class="card-header pb-0 p-3">
                         <div class="row">
                             <div class="col-md-8 d-flex align-items-center">
-                                <h6 class="mb-3">Profile Information</h6>
+                                <h6 class="mb-3">Informacion de Perfil</h6>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                             <div class="row">
                                 
                                 <div class="mb-3 col-md-6">
-                                    <label class="form-label">Email address</label>
+                                    <label class="form-label">Correo Electronico</label>
                                     <input type="email" name="email" class="form-control border border-2 p-2" value='{{ old('email', auth()->user()->email) }}'>
                                     @error('email')
                                 <p class='text-danger inputerror'>{{ $message }} </p>
@@ -100,7 +100,7 @@
                                 </div>
                                 
                                 <div class="mb-3 col-md-6">
-                                    <label class="form-label">Name</label>
+                                    <label class="form-label">Nombre</label>
                                     <input type="text" name="name" class="form-control border border-2 p-2" value='{{ old('name', auth()->user()->name) }}'>
                                     @error('name')
                                 <p class='text-danger inputerror'>{{ $message }} </p>
@@ -108,7 +108,7 @@
                                 </div>
                                
                                 <div class="mb-3 col-md-6">
-                                    <label class="form-label">Phone</label>
+                                    <label class="form-label">Telefono</label>
                                     <input type="number" name="phone" class="form-control border border-2 p-2" value='{{ old('phone', auth()->user()->phone) }}'>
                                     @error('phone')
                                     <p class='text-danger inputerror'>{{ $message }} </p>
@@ -116,7 +116,7 @@
                                 </div>
                                 
                                 <div class="mb-3 col-md-6">
-                                    <label class="form-label">Location</label>
+                                    <label class="form-label">Direccion</label>
                                     <input type="text" name="location" class="form-control border border-2 p-2" value='{{ old('location', auth()->user()->location) }}'>
                                     @error('location')
                                     <p class='text-danger inputerror'>{{ $message }} </p>
@@ -124,16 +124,16 @@
                                 </div>
                                 
                                 <div class="mb-3 col-md-12">
-                                    <label for="floatingTextarea2">About</label>
+                                    <label for="floatingTextarea2">Nosotros</label>
                                     <textarea class="form-control border border-2 p-2"
-                                        placeholder=" Say something about yourself" id="floatingTextarea2" name="about"
+                                        placeholder=" Escribe una breve describcion" id="floatingTextarea2" name="about"
                                         rows="4" cols="50">{{ old('about', auth()->user()->about) }}</textarea>
                                         @error('about')
                                         <p class='text-danger inputerror'>{{ $message }} </p>
                                         @enderror
                                 </div>
                             </div>
-                            <button type="submit" class="btn bg-gradient-dark">Submit</button>
+                            <button type="submit" class="btn bg-gradient-dark">Enviar</button>
                         </form>
 
                     </div>
@@ -141,8 +141,6 @@
             </div>
 
         </div>
-        <x-footers.auth></x-footers.auth>
-    </div>
-    <x-plugins></x-plugins>
+       
 
 </x-layout>
