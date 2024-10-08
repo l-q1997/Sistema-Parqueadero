@@ -50,7 +50,7 @@
                                             data-bs-dismiss="alert" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
-                                    </div>
+                                    </div> 
                                 </div>
                                 @endif
                                 <form role="form" method="POST" action="{{ route('verify') }}" class="text-start">

@@ -59,20 +59,38 @@
                                         </div>
                                         @error('email')
                                         <p class='text-danger inputerror'>{{ $message }} </p>
+
+
+                                         <!-- INTERRUCTOR -->
                                         @enderror
                                         <div class="input-group input-group-outline mt-3">
                                             <label class="form-label">Contraseña</label>
-                                            <input type="password" class="form-control" name="password" value='{{ '12345'}}'>
+                                            <input type="password" class="form-control" name="password" id="password" value='{{ '12345'}}'>
                                         </div>
+
+
                                         @error('password')
                                         <p class='text-danger inputerror'>{{ $message }} </p>
+
+
+
                                         @enderror
                                         <div class="form-check form-switch d-flex align-items-center my-3">
-                                            <input class="form-check-input" type="checkbox" id="rememberMe">
-                                            <label class="form-check-label mb-0 ms-2" for="rememberMe">Ver Contraseña
-                                                
-                                            </label>
+                                            <input class="form-check-input" type="checkbox" id="rememberMe" onclick="togglePasswordVisibility()">
+                                            <label class="form-check-label mb-0 ms-2" for="rememberMe">Ver Contraseña</label>
                                         </div>
+
+
+                                        <script>
+                                            function togglePasswordVisibility() {
+                                                const passwordInput = document.getElementById('password');
+                                                const rememberMeCheckbox = document.getElementById('rememberMe');
+                                                passwordInput.type = rememberMeCheckbox.checked ? 'text' : 'password';
+                                            }
+                                        </script>
+
+
+
                                         <div class="text-center">
                                             <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2"> Inicio de 
                                                 Sesión</button>
