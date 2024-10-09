@@ -92,19 +92,21 @@
                 <div class="col-lg-4 mt-4 mb-3">
                     <div class="card z-index-2 ">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                            <div class="bg-gradient-dark shadow-dark border-radius-lg py-3 pe-1">
-                                <div class="chart">
-                                    <canvas id="chart-line-tasks" class="chart-canvas" height="170"></canvas>
-                                </div>
+                            <div 
+                                class="shadow-dark border-radius-lg py-3 pe-1" 
+                                style="background-image: url('{{ asset('assets') }}/img/conpa.jpg'); background-size: cover; background-position: center;">
+                            <div class="chart">
+                                <canvas id="chart-line-tasks" class="chart-canvas" height="170"></canvas>
                             </div>
                         </div>
+                        </div>
                         <div class="card-body">
-                            <h6 class="mb-0 ">Completed Tasks</h6>
-                            <p class="text-sm ">Last Campaign Performance</p>
+                            <h6 class="mb-0 ">Asignar conductor a vehiculo y ruta</h6>
+                            <p class="text-sm ">Asignacion vehicular masiva</p>
                             <hr class="dark horizontal">
                             <div class="d-flex ">
-                                <i class="material-icons text-sm my-auto me-1">schedule</i>
-                                <p class="mb-0 text-sm">just updated</p>
+                                <i class="material-icons text-sm my-auto me-1">arrow_forward</i>
+                                <p class="mb-0 text-sm">actulizar Conductores</p>
                             </div>
                         </div>
                     </div>
@@ -112,7 +114,7 @@
                 <div class="col-lg-4 col-md-6 mt-4 mb-4">
                     <div class="card z-index-2 ">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
-                            <div class="bg-gradient-primary shadow-primary border-radius-lg py-3 pe-1">
+                            <div class="bg-gradient-success shadow-success border-radius-lg py-3 pe-1">
                                 <div class="chart">
                                     <canvas id="chart-bars" class="chart-canvas" height="170"></canvas>
                                 </div>
@@ -120,13 +122,12 @@
                         </div>
 
                         <div class="card-body">
-                            <h6 class="mb-0 "> Daily Sales </h6>
-                            <p class="text-sm "> (<span class="font-weight-bolder">+15%</span>) increase in today
-                                sales. </p>
+                            <h6 class="mb-0 "> Estadisticas de la empresa </h6>
+                            <p class="text-sm "> (<span class="font-weight-bolder">+15%</span>) estadisticas unitarias mensuales </p>
                             <hr class="dark horizontal">
                             <div class="d-flex ">
-                                <i class="material-icons text-sm my-auto me-1">schedule</i>
-                                <p class="mb-0 text-sm"> updated 4 min ago </p>
+                                <i class="material-icons text-sm my-auto me-1">insert_chart</i>
+                                <p class="mb-0 text-sm"> ver las estadisticas </p>
                             </div>
                         </div>
                     </div>
@@ -136,20 +137,20 @@
                     <div class="card z-index-2 ">
                         <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
                             <div 
-    class="shadow-dark border-radius-lg py-3 pe-1" 
-    style="background-image: url('{{ asset('assets') }}/img/son.jpg'); background-size: cover; background-position: center;">
-    <div class="chart">
-        <canvas id="chart-line-tasks" class="chart-canvas" height="170"></canvas>
-    </div>
-</div>
+                                class="shadow-dark border-radius-lg py-3 pe-1" 
+                                style="background-image: url('{{ asset('assets') }}/img/son.jpg'); background-size: cover; background-position: center;">
+                            <div class="chart">
+                                <canvas id="chart-line-tasks" class="chart-canvas" height="170"></canvas>
+                            </div>
+                        </div>
                         </div>
                         <div class="card-body">
-                            <h6 class="mb-0 ">Completed Tasks</h6>
-                            <p class="text-sm ">Last Campaign Performance</p>
+                            <h6 class="mb-0 ">Gestionar Pedidos y Clientes</h6>
+                            <p class="text-sm ">Gestion de los pedidos y clientes</p>
                             <hr class="dark horizontal">
                             <div class="d-flex ">
-                                <i class="material-icons text-sm my-auto me-1">schedule</i>
-                                <p class="mb-0 text-sm">just updated</p>
+                                <i class="material-icons text-sm my-auto me-1">person</i>
+                                <p class="mb-0 text-sm">ver los clientes y pedidos</p>
                             </div>
                         </div>
                     </div>
@@ -161,10 +162,10 @@
                         <div class="card-header pb-0">
                             <div class="row">
                                 <div class="col-lg-6 col-7">
-                                    <h6>Projects</h6>
+                                    <h6>Sistema de Transportes Exprés</h6>
                                     <p class="text-sm mb-0">
-                                        <i class="fa fa-check text-info" aria-hidden="true"></i>
-                                        <span class="font-weight-bold ms-1">30 done</span> this month
+                                        <i class="fas fa-truck text-success" aria-hidden="true"></i>
+                                        <span class="font-weight-bold ms-1">Listado</span> de Vehiculos
                                     </p>
                                 </div>
                                 <div class="col-lg-6 col-5 my-auto text-end">
@@ -193,16 +194,16 @@
                                         <tr>
                                             <th
                                                 class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                Companies</th>
+                                                Camiones</th>
                                             <th
                                                 class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
-                                                Members</th>
+                                                Placa</th>
                                             <th
                                                 class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                Budget</th>
+                                                Estado</th>
                                             <th
                                                 class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                                Completion</th>
+                                                Kilometraje</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -210,11 +211,11 @@
                                             <td>
                                                 <div class="d-flex px-2 py-1">
                                                     <div>
-                                                        <img src="{{ asset('assets') }}/img/small-logos/logo-xd.svg"
+                                                        <img src="{{ asset('assets') }}/img/small-logos/toyota.png"
                                                             class="avatar avatar-sm me-3" alt="xd">
                                                     </div>
                                                     <div class="d-flex flex-column justify-content-center">
-                                                        <h6 class="mb-0 text-sm">Material XD Version</h6>
+                                                        <h6 class="mb-0 text-sm">Toyota Dyna</h6>
                                                     </div>
                                                 </div>
                                             </td>
